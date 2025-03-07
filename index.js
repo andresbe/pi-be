@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 4000;
 const app = express();
 
 const router = express.Router();  // ✅ Corrected variable
-
+asdadas;
 app.use(cors()); // middleware
 router.route('/')
     .get((req,res) => {
