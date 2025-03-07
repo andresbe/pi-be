@@ -2,6 +2,7 @@
 
 Revisar comandos de git
 
+Git clone
 Git add
 git push
 git fetch
