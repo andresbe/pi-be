@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/andresbe/pi-be/issues"
   },
-  "homepage": "https://github.com/andresbe/pi-be#readme"
+  "homepage": "https://github.com/andresbe/pi-be#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0"
+  }
 }
