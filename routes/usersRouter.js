@@ -44,8 +44,12 @@ const middleWare2 = (req,res,next) => {
 
 router.get('/users',async (req,res)=> {
         try {
-            const users = await User.find();
-            res.json(users);
+            res.status(200).json({
+                status: 'ok',
+                message: 'Mi primer endpoint'
+            });
+            // const users = await User.find();
+            // res.json(users);
         } catch (err) {
             res.status(400).json({ error: err.message });
         }

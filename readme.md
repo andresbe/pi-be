@@ -7,3 +7,6 @@ Tarea:
 -Investigar ORM (Sequelize, mongoose)
 -Instalar MongoDB
 -Instalar SQL (Puede ser con HeidiSQL)
+- Setup BE
+- Setup FE
+- 

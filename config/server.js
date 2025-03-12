@@ -24,7 +24,7 @@ function startServer() {
     app.use(express.json());
     // app.use(helmet());
 
-    connectDB();
+    // connectDB();
     app.use(loggerMiddleware);
     app.use(userRouter); /// use es agregar este middleware
 
