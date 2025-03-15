@@ -85,3 +85,5 @@ Request made: GET /validate at 2025-03-12T04:02:41.978Z
 Request made: GET /users at 2025-03-12T04:04:43.315Z
 Request made: GET / at 2025-03-12T04:23:22.161Z
 Request made: GET /users at 2025-03-12T04:23:24.865Z
+Request made: POST /users at 2025-03-15T17:36:32.531Z
+Request made: POST /users/login at 2025-03-15T17:36:41.696Z
