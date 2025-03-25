@@ -1,28 +1,26 @@
 {
-  "name": "users-tasks",
+  "name": "pi-be",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env NODE_ENV=development node index.js",
-    "start:prod": "cross-env NODE_ENV=production node index.js"
+    "start": "cross-env NODE_ENV=development node --watch index.js",
+    "start:prod": "cross-env NODE_ENV=production node --watch index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "description": "",
+  "type": "module",
+  "description": "Desarrollo del backend del proyecto integrador",
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "bcryptjs": "^3.0.2",
-    "cors": "^2.8.5",
-    "cross-env": "^7.0.3",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "helmet": "^8.0.0",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.12.1",
-    "nodemon": "^3.1.9",
-    "winston": "^3.17.0"
+    "bcrypt": "5.1.1",
+    "bcryptjs": "3.0.2",
+    "cors": "2.8.5",
+    "cross-env": "7.0.3",
+    "dotenv": "16.4.7",
+    "express": "4.21.2",
+    "helmet": "8.0.0",
+    "jsonwebtoken": "9.0.2",
+    "mongoose": "8.12.1",
+    "winston": "3.17.0"
   }
 }
