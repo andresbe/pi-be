@@ -1,12 +1,23 @@
 import crypto from 'node:crypto';
-
 import bcrypt from 'bcrypt';
-import DBLocal from 'db-local';
+//import DBLocal from 'db-local';
 
-const { Schema } = new DBLocal({ path: '../db'});
+import mongoose from 'mongoose';
+
+const urlDB = 'mongodb://mongoDB:27017/Users';
+
+mongoose.connect(urlDB, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true})
+  .then(() => {
+    console.log('Conectado a la base de datos MongoDB');
+  })
+  .catch(() => {
+    console.error('Error al conectar con la base de datos MongoDB', error);
+  });
 
 // Creacion del schema de usuarios
-const User = Schema('Users', {
+const User = mongoose.model('Users', {
     _id: { type: String, require: true },
     username: { type: String, require: true },
     password: { type: String, require: true },

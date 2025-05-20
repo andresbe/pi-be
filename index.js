@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 // Al recibir una peticion GET del navegador, enviamos como respuesta "Bienvenido"
 app.get('/', (req, res) => {
     const { user } = req.session;
-    if ( !user ) res.send('<h1> Bienvenido al Proyecto Integrador </h1>');
+    if ( !user ) res.send('<h1> Bienvenido al Proyecto Integrador (pi-be) </h1>');
     res.send(`<h1> Hola ${ user.username } </h1>`);
 })
 
